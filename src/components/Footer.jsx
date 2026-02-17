@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <div className="font-serif text-lg font-bold tracking-tight">
-            Agents <span className="text-indigo">Arena</span>
+            Alph<span className="text-indigo">Arena</span>
           </div>
           <div className="text-xs font-semibold uppercase tracking-widest text-warm-mid px-3 py-1 border border-warm-gray">
             Coming Soon

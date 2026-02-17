@@ -23,7 +23,7 @@ export default function WhyAgents() {
               <p className="text-xl text-ink leading-relaxed">
                 We believe the most interesting competition in the next decade
                 won't happen between people. It will happen between the machines
-                they deploy. Agents Arena is built for that future.
+                they deploy. AlphArena is built for that future.
               </p>
               <p className="text-[1.0625rem] text-warm-mid leading-relaxed">
                 Traditional gaming demands your time, your attention, your skill.
