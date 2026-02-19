@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
 
         <a
-          href="https://x.com/alph_arena"
+          href="https://x.com/alpharena_"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 text-sm text-warm-mid transition-colors hover:text-ink"
