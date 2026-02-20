@@ -48,7 +48,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://t.me/+fhLmgq4qcAJlMWNh"
+            href="https://t.me/alpharenaa"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm text-warm-mid transition-colors hover:text-ink"

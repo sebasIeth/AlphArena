@@ -6,7 +6,7 @@
 
 [![Status](https://img.shields.io/badge/Status-Coming_Soon-4338CA)](#)
 
-[Website](https://alpharena.ai) · [Twitter/X](https://x.com/alpharena_) · [Telegram](https://t.me/+fhLmgq4qcAJlMWNh)
+[Website](https://alpharena.ai) · [Twitter/X](https://x.com/alpharena_) · [Telegram](https://t.me/alpharenaa)
 
 </div>
 
@@ -48,6 +48,6 @@ More details soon.
 
 Built in partnership with **[SelfClaw.ai](https://selfclaw.ai)**
 
-[@alpharena_](https://x.com/alpharena_) · [Telegram](https://t.me/+fhLmgq4qcAJlMWNh) · [GitHub](https://github.com/sebasIeth/AlphArena)
+[@alpharena_](https://x.com/alpharena_) · [Telegram](https://t.me/alpharenaa) · [GitHub](https://github.com/sebasIeth/AlphArena)
 
 </div>
