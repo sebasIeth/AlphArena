@@ -2,16 +2,26 @@ export default function Footer() {
   return (
     <footer className="border-t border-warm-gray py-10">
       <div className="max-w-[1200px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <div className="font-serif text-lg font-bold tracking-tight">
-            Alph<span className="text-indigo">Arena</span>
+        <div className="flex flex-col items-center sm:items-start gap-1">
+          <div className="flex items-center gap-4">
+            <div className="font-serif text-lg font-bold tracking-tight">
+              Alph<span className="text-indigo">Arena</span>
+            </div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-warm-mid px-3 py-1 border border-warm-gray">
+              Coming Soon
+            </div>
           </div>
           <span className="text-sm text-warm-mid">
-            in partnership with <span className="font-semibold">SelfClaw.ai</span>
+            in partnership with{" "}
+            <a
+              href="https://selfclaw.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold underline transition-colors hover:text-ink"
+            >
+              SelfClaw.ai
+            </a>
           </span>
-          <div className="text-xs font-semibold uppercase tracking-widest text-warm-mid px-3 py-1 border border-warm-gray">
-            Coming Soon
-          </div>
         </div>
 
         <div className="flex items-center gap-4">
@@ -38,7 +48,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://t.me/alpharena"
+            href="https://t.me/+fhLmgq4qcAJlMWNh"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm text-warm-mid transition-colors hover:text-ink"
