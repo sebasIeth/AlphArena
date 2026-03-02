@@ -5,12 +5,6 @@ export default function Nav() {
         <a href="#" className="font-serif text-xl font-bold tracking-tight">
           Alph<span className="text-indigo">Arena</span>
         </a>
-        <a
-          href="#early-access"
-          className="text-sm font-semibold uppercase tracking-widest px-6 py-2.5 border-2 border-ink bg-transparent transition-colors hover:bg-ink hover:text-cream"
-        >
-          Get Early Access
-        </a>
       </div>
     </nav>
   )
