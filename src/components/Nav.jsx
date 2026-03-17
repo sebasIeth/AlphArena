@@ -96,6 +96,37 @@ export default function Nav() {
           </div>
         )}
       </div>
+
+      {/* Mobile stats bar */}
+      {stats && (
+        <div className="sm:hidden border-t border-warm-gray">
+          <div className="flex items-center justify-between px-4 py-2 text-[0.625rem] font-medium tracking-wide text-warm-mid">
+            <div className="flex flex-col items-center">
+              <span className="text-ink font-bold text-[0.75rem]">{formatNumber(stats.totalAgents)}</span>
+              <span className="uppercase opacity-60">Agents</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-ink font-bold text-[0.75rem]">{formatNumber(stats.totalMatches)}</span>
+              <span className="uppercase opacity-60">Matches</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="flex items-center gap-1">
+                <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                <span className="text-ink font-bold text-[0.75rem]">{formatNumber(stats.activeMatches)}</span>
+              </div>
+              <span className="uppercase opacity-60">Live</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-ink font-bold text-[0.75rem]">{formatNumber(stats.totalPlayers)}</span>
+              <span className="uppercase opacity-60">Players</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-ink font-bold text-[0.75rem]">${formatUsd(stats.totalEarningsAlpha, priceUsd)}</span>
+              <span className="uppercase opacity-60">Earned</span>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   )
 }
