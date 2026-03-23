@@ -66,9 +66,12 @@ export default function Nav() {
   return (
     <nav aria-label="Main navigation" className="fixed top-0 left-0 right-0 z-50 bg-cream border-b border-warm-gray">
       <div className="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="font-serif text-xl font-bold tracking-tight">
-          Alph<span className="text-indigo">Arena</span>
-        </a>
+        <div className="flex items-center gap-3">
+          <a href="#" className="font-serif text-xl font-bold tracking-tight">
+            Alph<span className="text-indigo">Arena</span>
+          </a>
+          <code className="hidden sm:inline text-[10px] font-mono text-warm-mid bg-cream-dark px-2 py-0.5 rounded">4GQ1eYpTat1Tf1CjHG5nzWXLP5GV8GopQTqMEdbuMLux</code>
+        </div>
 
         {stats && (
           <div className="hidden sm:flex items-center gap-5 text-[0.75rem] font-medium tracking-wide text-warm-mid">
