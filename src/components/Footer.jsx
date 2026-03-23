@@ -14,12 +14,12 @@ export default function Footer() {
           <span className="text-sm text-warm-mid">
             in partnership with{" "}
             <a
-              href="https://selfclaw.ai"
+              href="https://www.clawpump.tech/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold underline transition-colors hover:text-ink"
             >
-              SelfClaw.ai
+              ClawPump
             </a>
           </span>
         </div>
