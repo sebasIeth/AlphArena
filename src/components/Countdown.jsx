@@ -34,7 +34,7 @@ export default function Countdown() {
     return (
       <div>
         <a
-          href="https://app.alpharena.ai/"
+          href="https://app.alpharena.ai/matches"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 text-base font-semibold px-9 py-4 bg-indigo text-white border-2 border-indigo transition-all hover:bg-indigo-deep hover:border-indigo-deep hover:-translate-y-px group"
