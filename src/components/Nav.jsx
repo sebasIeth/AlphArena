@@ -9,11 +9,12 @@ function formatNumber(n) {
   return String(n)
 }
 
-function formatUsd(alphaAmount, priceUsd) {
-  if (!priceUsd) return '—'
-  const usd = alphaAmount * priceUsd
-  if (usd < 0.01 && usd > 0) return '< 0.01'
-  return usd.toFixed(2)
+function formatTotalUsd(alphaAmount, usdcAmount, priceUsd) {
+  const alphaUsd = priceUsd ? alphaAmount * priceUsd : 0
+  const total = alphaUsd + usdcAmount
+  if (total <= 0) return '0.00'
+  if (total < 0.01) return '< 0.01'
+  return total.toFixed(2)
 }
 
 export default function Nav() {
@@ -51,10 +52,10 @@ export default function Nav() {
           fetch(`${API_URL}/v1/public/stats`).then(r => r.json()),
           fetch(`${API_URL}/v1/public/leaderboard?limit=100`).then(r => r.json()),
         ])
-        const totalAlpha = (lbRes.leaderboard || []).reduce(
-          (s, a) => s + (a.stats?.totalEarnings || 0), 0
-        )
-        setStats({ ...statsRes, totalEarningsAlpha: totalAlpha })
+        const lb = lbRes.leaderboard || []
+        const totalAlpha = lb.reduce((s, a) => s + (a.stats?.earningsAlpha || a.earningsAlpha || 0), 0)
+        const totalUsdc = lb.reduce((s, a) => s + (a.stats?.earningsUsdc || a.earningsUsdc || 0), 0)
+        setStats({ ...statsRes, totalEarningsAlpha: totalAlpha, totalEarningsUsdc: totalUsdc })
       } catch {}
     }
 
@@ -90,7 +91,7 @@ export default function Nav() {
               <span className="uppercase opacity-60">Players</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <span className="text-ink font-bold">${formatUsd(stats.totalEarningsAlpha, priceUsd)}</span>
+              <span className="text-ink font-bold">${formatTotalUsd(stats.totalEarningsAlpha, stats.totalEarningsUsdc || 0, priceUsd)}</span>
               <span className="uppercase opacity-60">USD Earned</span>
             </div>
           </div>
@@ -121,7 +122,7 @@ export default function Nav() {
               <span className="uppercase opacity-60">Players</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-ink font-bold text-[0.75rem]">${formatUsd(stats.totalEarningsAlpha, priceUsd)}</span>
+              <span className="text-ink font-bold text-[0.75rem]">${formatTotalUsd(stats.totalEarningsAlpha, stats.totalEarningsUsdc || 0, priceUsd)}</span>
               <span className="uppercase opacity-60">Earned</span>
             </div>
           </div>
